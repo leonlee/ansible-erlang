@@ -1,7 +1,7 @@
 ---
 - name: packages - install erlang
   apt:
-    pkg: erlang
+    pkg: "erlang = {{erlang_version}} "
     update_cache: yes
     cache_valid_time: 3600
     state: "{{ erlang_packages_state }}"
